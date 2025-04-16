@@ -66,7 +66,6 @@ nav {
   color: var(--text-dark);
 }
 
-
 .nav-menu {
   color: var(--text-dark);
   cursor: pointer;
@@ -108,7 +107,37 @@ nav {
   display: none;
 }
 
-@media (width > 768px) {
+
+/* hero section styling */
+.hero {
+  height: 100vh;
+  padding-top:4rem;
+}
+
+.hero .container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero .img-container{
+  width: 100%;
+  height: auto;
+}
+
+.hero-content h1{
+
+}
+
+
+
+
+
+
+
+/*for larger screens larger than 1120*/
+@media (width > 999px) {
   nav {
     position: static;
     padding-block: 2rem 0 ;
@@ -119,6 +148,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    margin-bottom: 1rem;
   }
 
   .nav-header {
@@ -186,4 +216,95 @@ nav {
   .sign-up:hover {
     color: var(--fifth-color);
   }
+
+  /* hero section styling */
+  .hero {
+    height: auto;
+    padding-top: 0;
+  }
+
+  .hero .container {
+    width: 77%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero .img-container{
+    padding-block: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+  }
+
+  .hero .img-container img {
+    min-width: 450px;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .hero-content{
+    padding-inline: 2rem;
+  }
+
+  .hero-content h1 {
+    margin-top: 150px;
+    font-size: 35px;
+    min-width: 150px;
+  }
+
+  .hero-content p {
+    margin-top: 10px;
+    line-height: 1.2;
+    min-width: 150px;
+  }
 }
+
+@media (min-width: 999px) and (max-width: 1125px) {
+  /* hero section styling */
+  .hero {
+    height: auto;
+    padding-top: 0;
+  }
+
+  .hero .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero .img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .img-container img {
+    min-width: 450px;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .hero-content{
+    padding-inline: 2rem;
+  }
+
+  .hero-content h1 {
+    margin-top: 150px;
+    font-size: 30px;
+    min-width: 200px;
+  }
+
+  .hero-content p {
+    margin-top: 10px;
+    line-height: 1.2;
+    min-width: 200px;
+  }
+}
+
+
+
